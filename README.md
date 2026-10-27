@@ -44,7 +44,7 @@ pip install -r requirements.txt
 1. Pastikan Python sudah terinstal.
 2. Instal dependensi:
    ```bash
-   python -m pip install streamlit pandas matplotlib seaborn
+   python -m pip install streamlit pandas
    ```
 3. Jalankan aplikasi:
    ```bash
