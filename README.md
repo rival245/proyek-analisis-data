@@ -1,38 +1,35 @@
-# Dashboard Analisis E-Commerce Olist
+# Dashboard Analisis Data E-Commerce Olist
 
-Dashboard interaktif untuk menganalisis performa penjualan, logistik, dan kepuasan pelanggan dari dataset Olist.
+Dashboard interaktif ini dibuat untuk menganalisis performa penjualan, tren pesanan, serta faktor-faktor yang memengaruhi kepuasan pelanggan dari dataset E-Commerce Olist. Proyek ini merupakan bagian dari submission kelas **Belajar Fundamental Analisis Data** di Dicoding.
 
-## Fitur
-- Dashboard utama dengan visualisasi produk dan performa bisnis
-- Filter berdasarkan tahun dan state pelanggan
-- Analisis revenue per kategori produk
-- Analisis hubungan keterlambatan pengiriman dengan review score
-- Tren pesanan bulanan
-- Top negara bagian pelanggan
+## Struktur Direktori
+Struktur folder proyek ini diatur sebagai berikut:
+```text
+submission
+├───dashboard
+│   ├───main_data.csv
+│   └───dashboard_ecommerce.py
+├───notebook.ipynb
+├───README.md
+├───requirements.txt
+└───url.txt
 
-## Struktur File
-- `dashboard_ecommerce.py` — aplikasi Streamlit utama
-- `customers_dataset.csv` — data pelanggan
-- `orders_dataset.csv` — data pesanan
-- `order_items_dataset.csv` — detail item dari pesanan
-- `products_dataset.csv` — data produk
-- `order_reviews_dataset.csv` — data review pelanggan
+## Setup Environment - Shell / Terminal
+Untuk menjalankan proyek ini secara lokal di komputer Anda, ikuti langkah-langkah berikut:
 
-## Cara Menjalankan
-1. Pastikan Python sudah terinstal.
-2. Instal dependensi:
-   ```bash
-   python -m pip install streamlit pandas matplotlib seaborn
-   ```
-3. Jalankan aplikasi:
-   ```bash
-   python -m streamlit run dashboard_ecommerce.py
-   ```
-4. Buka URL yang ditampilkan di browser, biasanya:
-   ```text
-   http://localhost:8501
-   ```
+1. Clone repository ini atau unduh seluruh file proyek ke komputer lokal Anda.
+2. Buka terminal atau command prompt, lalu masuk ke direktori proyek.
+3. Instal seluruh library yang dibutuhkan menggunakan file requirements.txt:
+
+pip install -r requirements.txt
+
+## Cara Menjalankan Dashboard Streamlit
+
+1. Pastikan Anda berada di direktori utama proyek.
+2. Jalankan perintah berikut di terminal:
+streamlit run dashboard/dashboard_ecommerce.py
+3. Buka tautan lokal (http://localhost:8501) yang muncul di terminal melalui browser Anda.
 
 ## Catatan
-- Dashboard sudah dikonfigurasi agar membaca file CSV dari folder yang sama dengan script.
-- Aplikasi mendukung filter interaktif untuk analisis yang lebih detail.
+-Pastikan file main_data.csv berada di dalam folder dashboard/ agar dapat terbaca dengan baik oleh script dashboard_ecommerce.py.
+-Aplikasi ini mendukung filter interaktif untuk menganalisis data berdasarkan parameter tertentu.
