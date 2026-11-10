@@ -33,8 +33,8 @@ Buka terminal di direktori proyek Anda, lalu jalankan perintah:
 pip install -r requirements.txt
 
 Cara Menjalankan Dashboard secara Lokal
-Pastikan Anda sudah berada di direktori utama (root) repository proyek ini di terminal.
-Jalankan perintah Streamlit berikut:
+-Pastikan Anda sudah berada di direktori utama (root) repository proyek ini di terminal.
+-Jalankan perintah Streamlit berikut:
 
 streamlit run dashboard/dashboard_ecommerce.py
 Buka tautan lokal yang muncul di terminal (biasanya berupa http://localhost:8501) melalui browser Anda.
