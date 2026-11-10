@@ -1,0 +1,3 @@
+untuk github: https://github.com/rival245/proyek-analisis-data
+
+untuk streamlit: https://rival245-dashboard.streamlit.app/
