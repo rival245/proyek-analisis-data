@@ -45,5 +45,5 @@ Cara Menjalankan Dashboard secara Lokal
 
 ## Run Streamlit App
 ```
-streamlit run dashboard/dashboard_ecommerce.py
+python -m streamlit run dashboard_ecommerce.py
 ```
