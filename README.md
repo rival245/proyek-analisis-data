@@ -19,31 +19,58 @@ submission
 Setup Environment & Instalasi
 ```
 
-Anda dapat memilih salah satu cara di bawah ini untuk menyiapkan lingkungan proyek di komputer lokal Anda:
+## Persiapan Environment
 
-Opsi 1: Menggunakan Anaconda (Rekomendasi)
-Buka Anaconda Prompt atau terminal Anda, lalu jalankan perintah berikut:
+Sebelum menjalankan perintah instalasi atau Streamlit, buka terminal dan pindah ke **direktori utama proyek**, yaitu folder yang berisi `dashboard_ecommerce.py`, `requirements.txt`, dan file dataset.
 
-## Setup Environment - Anaconda
+Di Windows PowerShell, gunakan perintah berikut. Ganti path contoh dengan lokasi folder proyek di komputer Anda:
+
+```powershell
+cd "C:\path\ke\dashboard_ecommerce"
 ```
+
+Contoh, jika proyek berada di folder Documents:
+
+```powershell
+cd "$HOME\Documents\dashboard_ecommerce"
+```
+
+Pastikan terminal sudah berada di direktori yang benar dengan memeriksa keberadaan file aplikasi:
+
+```powershell
+Test-Path .\dashboard_ecommerce.py
+```
+
+Hasilnya harus `True`. Jika `False`, pindah ke folder proyek yang benar sebelum melanjutkan.
+
+## Instalasi Dependensi
+
+Pilih salah satu opsi berikut dari direktori utama proyek.
+
+### Opsi 1: Menggunakan Anaconda
+
+```powershell
 conda create --name main-ds python=3.9
 conda activate main-ds
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-Opsi 2: Menggunakan Terminal / Command Prompt Biasa
-Buka terminal di direktori proyek Anda, lalu jalankan perintah:
+### Opsi 2: Menggunakan Python
 
-## Setup Environment - Shell/Terminal
-```
-pip install -r requirements.txt
+```powershell
+python -m pip install -r requirements.txt
 ```
 
-Cara Menjalankan Dashboard secara Lokal
--Pastikan Anda sudah berada di direktori utama (root) repository proyek ini di terminal.
--Jalankan perintah Streamlit berikut:
+## Cara Menjalankan Dashboard secara Lokal
 
-## Run Streamlit App
-```
+Pastikan terminal masih berada di direktori utama proyek, kemudian jalankan:
+
+```powershell
 python -m streamlit run dashboard_ecommerce.py
+```
+
+Jangan menjalankan perintah tersebut dari folder lain (misalnya folder instalasi VS Code), karena Streamlit tidak akan menemukan file `dashboard_ecommerce.py`. Alternatifnya, berikan path lengkap ke file aplikasi:
+
+```powershell
+python -m streamlit run "C:\path\ke\dashboard_ecommerce\dashboard_ecommerce.py"
 ```
